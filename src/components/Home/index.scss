@@ -1,0 +1,108 @@
+.home-page{
+    background-color: #0D3B66;
+    color:#ffffff;
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    @media screen and (max-width: 768px) {
+    padding: 10px;
+    margin-left: 0;
+  }
+    .text-zone{
+        max-width: 700px;
+        padding:2rem;
+        padding-left:140px;
+        @media screen and (max-width:768px){
+            padding: 1rem;
+            padding-left: 70px;
+        }
+    }
+    h1{
+        color:#f1f0fa;
+        font-size: 3rem;
+            @media screen and (max-width: 768px) {
+      font-size: 1.8rem; // Títulos más pequeños
+    }
+        margin:0;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        animation: 1s 1.7 backwards;
+
+
+        img{
+            width:62px
+        }
+    }
+    h2{
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: #f95738;
+            @media screen and (max-width: 768px) {
+      font-size: 1.4rem; // Más pequeño en móvil
+    }
+        margin-top:1rem;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+    p{
+        font-family:"Inter", sans-serif;
+        font-weight: 400;
+        font-size:1.1rem;
+            @media screen and (max-width: 768px) {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+        color:#EAEAEA;
+        margin-top: 1rem;
+        line-height: 1.5;
+        animation: fadeIn 1s 2.7s backwards;
+    }
+        .button-group{
+        display:flex;
+        gap:1rem;
+        margin-top:2rem;
+        animation: fadeIn 1s 3.3s backwards;
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            gap:0rem;
+            margin-top: 1.5rem;
+            align-items:flex-start;
+            width:fit-content;
+        }
+    }
+    .flat-button{
+        font-family: 'Inter', sans-serif;
+        display:inline-block;
+        margin-top:0.5rem;
+        padding: 0.8rem 2rem;
+        background-color: #f95738;
+        color:#ffffff;
+        text-decoration:none;
+        border-radius:0.5rem;
+        font-weight:600;
+        @media screen and (max-width: 768px) {
+        padding: 10px; // Faltaba el valor
+        margin-left: 0;
+    }
+        animation: fadeIn 1s 3.3s backwards;
+        transition: all 0.3s ease;
+        position: relative;
+    .text-zone{
+        max-width:700px;
+        padding:2rem;
+        padding-left:140px;
+        @media screen and (max-width: 768px) {
+            padding: 1rem;
+            padding-left: 1rem;
+        }
+    }
+      &:hover {
+        background-color: #F1F0CA;
+        color: #0D3B66;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+    }
+}
